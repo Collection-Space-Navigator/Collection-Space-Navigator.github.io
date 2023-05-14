@@ -155,11 +155,17 @@
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/--?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <h2 class="title is-3">Tool description</h2>
+        <div class="content has-text-justified">
+          <p>
+            The Collection Space Navigator (CSN) is an explorative visualization tool for researching collections and their multidimensional representations. We designed this tool to better understand multidimensional data, its methods, and semantic qualities through spatial navigation and filtering. CSN can be used with any image collection and can be customized for specific research needs (see Jupyter Notebook or Colab version How-To guide).
+          </p>
         </div>
+        <!---
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/--?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        -->
       </div>
     </div>
     <!--/ Paper video. -->
@@ -176,12 +182,12 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Filtering</h2>
-          <p>
-          The tool allows interaction methods that filters objects in the Projection Panel like The dimension filters and advanced filters.
-          </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/filtering_compression.mp4" type="video/mp4">
           </video>
+          <p>
+            The tool allows interaction methods that filters objects in the Projection Panel like The dimension filters and advanced filters.
+          </p>
         </div>
       </div>
       <!--/ Filtering Effects. -->
@@ -191,12 +197,12 @@
         <h2 class="title is-3">Diferent projections</h2>
         <div class="columns is-centered">
           <div class="column content">
-            <p>
-              The tool allows render datasets in different projections (UMAP, T-SNE, PCA) allowing to see different constructed spaces projected using embeddings.
-            </p>
             <video id="matting-video" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/projection_compression.mp4" type="video/mp4">
             </video>
+            <p>
+              The tool allows render datasets in different projections (UMAP, T-SNE, PCA) allowing to see different constructed spaces projected using embeddings.
+            </p>
           </div>
 
         </div>
@@ -211,12 +217,12 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Clusters</h2>
-          <p>
-            Using clusters to show categories.
-          </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/clusters_compression.mp4" type="video/mp4">
           </video>
+          <p>
+            Using clusters to show categories.
+          </p>
         </div>
       </div>
       <!--/ Clusters. -->
@@ -226,12 +232,12 @@
         <h2 class="title is-3">Time</h2>
         <div class="columns is-centered">
           <div class="column content">
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/time_compression.mp4" type="video/mp4">
+            </video>
             <p>
               As visualizing time in the dataset objects is so important to art historians researchers, as seeing stuff over time is the crucial dimension to analyse historically the relations in the dataset.
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/time.mp4" type="video/mp4">
-            </video>
           </div>
 
         </div>
@@ -244,13 +250,14 @@
         <h2 class="title is-3">Querying</h2>
         <div class="columns is-centered">
           <div class="column content">
+            
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/querying.mp4" type="video/mp4">
+            </video>
             <p>
               As a byproduct of our method, we can also solve the matting problem by ignoring
               samples that fall outside of a bounding box during rendering.
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/querying.mp4" type="video/mp4">
-            </video>
           </div>
 
         </div>
@@ -262,20 +269,34 @@
         <h2 class="title is-3">Export</h2>
         <div class="columns is-centered">
           <div class="column content">
+            
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/export.mp4" type="video/mp4">
+            </video>
             <p>
               As a byproduct of our method, we can also solve the matting problem by ignoring
               samples that fall outside of a bounding box during rendering.
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/export.mp4"
-                      type="video/mp4">
-            </video>
           </div>
 
         </div>
       </div>
       <!--/ Export. -->
     </div>
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data preparation</h2>
+        <video id="data-preparation-video" controls playsinline height="100%">
+          <source src="./static/videos/data-preparation.mp4" type="video/mp4">
+        </video>
+        <p>
+          Jupyter Notebook (<a href="https://github.com/Collection-Space-Navigator/CSN/blob/main/CSN_colab.ipynb" target="_blank">CSN_colab.ipynb</a>) or Colab version (<a href="https://github.com/Collection-Space-Navigator/CSN/blob/main/CSN_notebook.ipynb" target="_blank"></a>CSN_notebook.ipynb</a>) can be prepared the datasets and build a customized version of the Collection Space Navigator. For Jupyter Notebook
+        </p>
+      </div>
+    </div>
+    <!--/ Paper video. -->
 
 <!-- Acknowledgements. -->
 <div class="columns is-centered">

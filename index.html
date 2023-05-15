@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description"
         content="CSN - Collection Space Navigator: Interactive Visualization Interface for Multidimensional Datasets.">
-  <meta name="keywords" content="Multidimensional, Visualization, TSNE, UMAP, ">
+  <meta name="keywords" content="Multidimensional data, Visualization, TSNE, UMAP, embeddings">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CSN - Collection Space Navigator</title>
 
@@ -186,8 +186,7 @@
               <source src="./static/videos/filtering_compression.mp4" type="video/mp4">
             </video>
             <p>
-              The tool allows for interaction methods, such as dimension filters and advanced filters, that can filter objects in the Projection Panel with filtered images greyed out.
-            
+              CSN allows users to filter and explore their collections using interactive and customizable Dimension Filters based on metadata and vector embeddings.
             </p>
           </div>
         </div>
@@ -196,32 +195,15 @@
       <!-- Diferent projections. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Different projections</h2>
+          <h2 class="title is-3">Projections</h2>
           <video id="projection-video" autoplay controls muted loop playsinline height="100%" poster="./static/videos/projection_compression2.jpg">
             <source src="./static/videos/projection_compression2.mp4" type="video/mp4">
           </video>
           <p>
-            The tool allows for rendering datasets in different projections (such as UMAP, T-SNE, and PCA), which enables users to visualize various constructed spaces projected using embeddings.
+            CSN provides customizable projections for visualizing and analyzing collections in two-dimensional space with the ability to zoom, scale, and switch between different projections.
           </p>
         </div>
       </div>
-      <!--
-      <div class="column">
-        <h2 class="title is-3">Diferent projections</h2>
-        <div class="columns is-centered">
-          <div class="projection-video">
-            <video id="matting-video" autoplay controls muted loop playsinline height="100%" poster="./static/videos/projection_compression2.jpg">
-              <source src="./static/videos/projection_compression2.mp4" type="video/mp4">
-            </video>
-            <p>
-              The tool allows for rendering datasets in different projections (such as UMAP, T-SNE, and PCA), which enables users to visualize various constructed spaces projected using embeddings.
-            </p>
-          </div>
-
-        </div>
-      </div>
-      -->
-      <!--/ Diferent projections. -->
     </div>
 
 
@@ -235,7 +217,7 @@
             <source src="./static/videos/clusters_compression_short_cursor.mp4" type="video/mp4">
           </video>
           <p>
-            Clusters are used to show categories, with objects belonging to the same category depicted with a border of the same color around their thumbnails.
+            CSN allows categorical data to be displayed using colored frames in the Projections Area to reveal patterns and clusters.
           </p>
         </div>
       </div>
@@ -243,14 +225,14 @@
 
       <!-- Time. -->
       <div class="column">
-        <h2 class="title is-3">Time</h2>
+        <h2 class="title is-3">2D Plots</h2>
         <div class="columns is-centered">
           <div class="column content">
             <video id="time-video" autoplay controls muted loop playsinline height="100%" poster="./static/videos/time_compression.jpg">
               <source src="./static/videos/time_compression.mp4" type="video/mp4">
             </video>
             <p>
-              Visualizing time in the dataset is crucial for art historians and researchers because it allows them to analyze historical relations within the dataset by observing changes over time.
+              CSN can also be used to display 2D plots with other types of data, such as time series.
             </p>
           </div>
 
@@ -269,7 +251,7 @@
               <source src="./static/videos/querying_compression.mp4" type="video/mp4">
             </video>
             <p>
-              We have added a querying feature that allows users to filter non-numerical dimensions by applying conditionals and boolean operations in those fields to find specific items.   
+              CSN supports complex and nested search queries with Boolean operators like AND, OR, equal (==) and not equal (!=).   
             </p>
           </div>
 
@@ -287,7 +269,7 @@
               <source src="./static/videos/export_compression.mp4" type="video/mp4">
             </video>
             <p>
-              The tool offers various export features, such as exporting the currently filtered data in a CSV file and exporting the current projection as a PNG image.
+              CSN allows to export the metadata of the currently filtered objects as CSV file and the current projection view as PNG.
             </p>
           </div>
 
@@ -299,12 +281,12 @@
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Data preparation</h2>
+        <h2 class="title is-3">Data Preparation</h2>
         <video id="data-preparation-video" controls playsinline height="100%" style="border: solid black 1px"  poster="">
           <source src="./static/videos/data_preparation.mp4" type="video/mp4">
         </video>
         <p>
-        Using Jupyter Notebook (<a href="https://github.com/Collection-Space-Navigator/CSN/blob/main/CSN_colab.ipynb" target="_blank">CSN_colab.ipynb</a>) or Colab version (<a href="https://github.com/Collection-Space-Navigator/CSN/blob/main/CSN_notebook.ipynb" target="_blank">CSN_notebook.ipynb</a>), users can prepare the datasets and build a customized version of the Collection Space Navigator.
+        Using (<a href="https://github.com/Collection-Space-Navigator/CSN/blob/main/CSN_notebook.ipynb" target="_blank">Jupyter Notebook</a>) or (<a href="https://github.com/Collection-Space-Navigator/CSN/blob/main/CSN_colab.ipynb" target="_blank">Google Colab</a>), preparing datasets to build a customized version of the Collection Space Navigator is made easy.
         </p>
       </div>
     </div>
@@ -367,7 +349,7 @@
         <a href="https://arxiv.org/abs/2205.10271" target="_blank">Compression ensembles quantify aesthetic complexity and the evolution of visual art</a> by Andres Karjus, Mar Canet Solà, Tillmann Ohm, Sebastian E. Ahnert, Maximilian Schich (2022)
       </p>
       <p>
-      The code is originally a fork of the <a href="https://github.com/GrantCuster/umap-explorer" target="_blank">umap-explorer</a> by <a href="https://grantcuster.com/" target="_blank">GrantCuster</a>, which was used as the basis for further development.
+      The code base is forked from <a href="https://github.com/GrantCuster/umap-explorer" target="_blank">umap-explorer</a> by <a href="https://grantcuster.com/" target="_blank">GrantCuster</a> and further developed.
       </p>
     </div>
   </div>
